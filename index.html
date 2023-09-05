@@ -11,39 +11,41 @@
 </head>
 
 <body>
-  <main>
     <header>
       <h1 id="principal">ANIMEGRAFIA</h1>
     </header>
-    <p>biografia de personagens de anime</p>
-    <hr>
-    <!--Lista ordenada-->
-    <div>
-    <h2>Animes</h2>
-      <span>
-        <ul>
-          <li><a href="dragonball.html" target="_self" rel="next">DragonBall</a></li>
-          <picture>
-            <source media="(max-width: 800px)" srcset="fotos/dragonball/dragonball-p.jpg" type="image/png">
-            <source media="(max-width: 1050px)" srcset="fotos/dragonball/dragonball-m.jpg" type="image/png">
-            <img src="fotos/dragonball/dragonball-g.jpg" alt="imagem">
-          </picture>
-          <li>Naruto</li>
-          <li>One Piece</li>
-          <li>One Punch Man</li>
-          <li>Kimetsu No Yaiba</li>
-          <li>Shingeki No Kyojin</li>
-          <li>Tate No Yūsha No Nariagari</li>
-        </ul>
-      </span>
-    </div>
-    <div>
-      <h2>Usando links externos</h2>
-      <p>Link para pagina externa o <a href="https://www.youtube.com/" target="_blank" rel="externa">YouTube</a></p>
-    </div>
-    <!--usando links internos-->
-    <p style="text-align: right;"> <a href="second.html" target="_self" rel="next"> Ir para segunda pagina</a></p>
-  </main>
+    <main>
+      <p>biografia de personagens de anime</p>
+      <hr>
+      <div>
+      <h2>Animes</h2>
+        <nav>
+          <!--Lista desordenada-->
+          <ul>
+            <li><a href="dragonball.html" target="_self" rel="next">DragonBall</a></li>
+            <picture>
+              <!--Imagens que redmensiona-->
+              <source media="(max-width: 800px)" srcset="fotos/dragonball/dragonball-p.jpg" type="image/png">
+              <source media="(max-width: 1050px)" srcset="fotos/dragonball/dragonball-m.jpg" type="image/png">
+              <img src="fotos/dragonball/dragonball-g.jpg" alt="imagem">
+            </picture>
+            <li>Naruto</li>
+            <li>One Piece</li>
+            <li>One Punch Man</li>
+            <li>Kimetsu No Yaiba</li>
+            <li>Shingeki No Kyojin</li>
+            <li>Tate No Yūsha No Nariagari</li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <h2>Usando links externos</h2>
+        <p>Link para pagina externa o <a href="https://www.youtube.com/" target="_blank" rel="externa">YouTube</a></p>
+      </div>
+    </main>    
+      <!--usando links internos-->
+    <footer><p style="text-align: right;"> <a href="second.html" target="_self" rel="next"> Ir para segunda pagina</a></p>
+    </footer>
 </body>
 
 </html>

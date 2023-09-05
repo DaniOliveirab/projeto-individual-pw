@@ -18,7 +18,8 @@ main{
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(51, 46, 94);
-    width: 1050px;
+    min-width: 600;
+    max-width: 1050px;
     padding: 10px;
     margin: auto;
 }
@@ -27,8 +28,7 @@ h1#principal{
     color:#921b1b;
     text-align: center;
     text-shadow: 1px 1px 2px #8f6e5a(64, 58, 92, 0.849);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+   
 }
 h1{
     color:#d34e4e;
@@ -63,6 +63,7 @@ div{
     margin: 30px 30px 30px 30px; 
     background-color: #c9e8fcd5;
 }
+
 div a {
     text-decoration: none;
   }
