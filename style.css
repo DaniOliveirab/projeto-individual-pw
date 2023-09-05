@@ -1,9 +1,15 @@
 @charset "UTF-8";
-
+@font-face {
+    font-family: 'Action Comics';
+    src: url('Action\ Comics.ttf') format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
 body{
     height: 100%;
-    background-image: linear-gradient(to bottom, #AEB9F2, #5864A6); 
+    background-image: linear-gradient(to bottom, #9DCCF6, #4EA4D9); 
     color: rgb(0, 0, 0);
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     
@@ -12,18 +18,57 @@ main{
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(51, 46, 94);
-    width: 600px;
+    width: 1050px;
     padding: 10px;
     margin: auto;
 }
-h1{
-    color: #272853;
+h1#principal{
+    font-family: 'Action Comics', Times, sans-serif;
+    color:#921b1b;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(64, 58, 92, 0.849);
+    text-shadow: 1px 1px 2px #8f6e5a(64, 58, 92, 0.849);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+h1{
+    color:#d34e4e;
+    text-align: center;
 }
 h2{
-    color: #3D5A73;
+    color: #971a03;
 }
+header{
+    padding: 1px 10px 10px 10px;
+    margin: 0px 0px 30px 0px; 
+    background-color: #5ebeffd5;
+}
+/* Estilos para o link no footer */
+footer a {
+    text-decoration: none;
+    color: #007acc; 
+  }
+  
+  /* Estilos para o link quando o mouse passa por cima (hover) */
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para o parágrafo no footer (opcional) */
+  footer p {
+    text-align: right; 
+    margin-top: 10px;
+  }
+div{
+    padding: 10px 10px 10px 10px;
+    margin: 30px 30px 30px 30px; 
+    background-color: #c9e8fcd5;
+}
+div a {
+    text-decoration: none;
+  }
+ div a:hover {
+    color: #1900ff; /* Cor do texto do link */
+  }
 p{
     text-align: justify;
 }

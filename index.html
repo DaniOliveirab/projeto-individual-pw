@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Adicionando favicon-->
-    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
-    <title>Sem Ideia</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Adicionando favicon-->
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+  <title>Animegrafia</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <main>
-      <h1>Sem Ideia</h1>
-      <h2>Subtitulo</h2>
-      <hr>
-      <p>Ainda estou <mark>decidindo</mark> o que vou fazer</p>
-      <!--Inserindo imagens no projeto-->
-      <img src="fotos/html-imagem.jpg" alt="Imagem de html">
-      <!--Lista ordenada-->
-      <h2>LISTA</h2>
-      <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-      </ol>
-        <h2>Usando links externos</h2>
-        <p>Link para pagina externa o <a href="https://www.youtube.com/" target="_blank" rel="externa">YouTube</a></p>
-        <!--usando links internos-->
-        <p style="text-align: right;"> <a href="second.html" target="_self" rel="next"> Ir para segunda pagina</a></p>
-    </main>
+  <main>
+    <header>
+      <h1 id="principal">ANIMEGRAFIA</h1>
+    </header>
+    <p>biografia de personagens de anime</p>
+    <hr>
+    <!--Lista ordenada-->
+    <div>
+    <h2>Animes</h2>
+      <span>
+        <ul>
+          <li><a href="dragonball.html" target="_self" rel="next">DragonBall</a></li>
+          <picture>
+            <source media="(max-width: 800px)" srcset="fotos/dragonball/dragonball-p.jpg" type="image/png">
+            <source media="(max-width: 1050px)" srcset="fotos/dragonball/dragonball-m.jpg" type="image/png">
+            <img src="fotos/dragonball/dragonball-g.jpg" alt="imagem">
+          </picture>
+          <li>Naruto</li>
+          <li>One Piece</li>
+          <li>One Punch Man</li>
+          <li>Kimetsu No Yaiba</li>
+          <li>Shingeki No Kyojin</li>
+          <li>Tate No Yūsha No Nariagari</li>
+        </ul>
+      </span>
+    </div>
+    <div>
+      <h2>Usando links externos</h2>
+      <p>Link para pagina externa o <a href="https://www.youtube.com/" target="_blank" rel="externa">YouTube</a></p>
+    </div>
+    <!--usando links internos-->
+    <p style="text-align: right;"> <a href="second.html" target="_self" rel="next"> Ir para segunda pagina</a></p>
+  </main>
 </body>
+
 </html>
