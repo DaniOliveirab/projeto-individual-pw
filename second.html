@@ -11,63 +11,77 @@
 </head>
 
 <body>
-    <header>
-      <h1 id="principal">SEGUNDA PAGINA</h1>
-    </header>
-    <main>
-      <hr>
-      <div>
-        <p>Site sem ideia com imagens</p>
+    <div id="interface">
+      <header id="cabecalho">
+        <h1>SEGUNDA PAGINA</h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
         <hr>
-        <!--Inserindo imagens que redimensiona-->
-        <picture>
-          <source media="(max-width: 750px)" srcset="fotos/one_piece/Crocodile-p.png" type="image/png">
-          <source media="(max-width: 1050px)" srcset="fotos/one_piece/Crocodile_m.png" type="image/png">
-          <img src="fotos/one_piece/Crocodile_m.png" alt="imagem">
-        </picture>
-      </div>
-      <div>
-        <!--Adicionando audio-->
-        <h2>Reproduzindo Audio</h2>
-        <p>Reproduza o audio abaixo</p>
-        <audio preload="metadata" controls autoplay loop>
-          <source src="midia/Crocodile-falando-Mugiwara.mp3" type="audio/mpeg">
-          <source src="midia/Crocodile-falando-Mugiwara.ogg" type="audio/ogg">
-          <source src="midia/Crocodile-falando-Mugiwara.wav" type="audio/wav">
-        </audio>
-      </div>
-      <!--Adicionando video-->
-      <div>
-        <h2>Reproduzindo Video</h2>
-        <p>Reproduza o video abaixo</p>
-        <video width="500" controls>
-          <source src="midia/Crocodile-falando-Mugiwara.webm" type="video/webm">
-          <source src="midia/Crocodile-falando-Mugiwara.mp4" type="video/mp4">
-          <source src="midia/Crocodile-falando-Mugiwara.m4v" type="video/mp4">
-          <source src="midia/Crocodile-falando-Mugiwara.ogv" type="video/ogv">
-          <p>Seu navegador não tem compatibilidade com reprodução de video</p>
-        </video>
-      </div>
-      <!-- Inserindo videos externos-->
-      <div>
-        <h 2>Adicionando video do YouTube</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qHlROAdarhk" title="YouTube video  player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-      <!--Adicionando links para download-->
-      <div>
-        <h2>Links para Download</h2>
-        <ul type="disc">
-          <li><a href="midia/Crocodile-falando-Mugiwara.mp3" download="Crocodile.mp3" type="audio/mpeg">Baixe o audio aqui</a></li>
-          <li><a href="midia/Crocodile-falando-Mugiwara.mp4" download="Crocodile.mp4" type="video/mp4">Baixe o video aqui</a></li>
-        </ul>
-      </div>
-  </main>
-  <footer>
-    <!--Voltar para pagina anterior-->
-    <p style="text-align: right;">
-      <a href="index.html" target="_self" rel="prev">(Voltar à página anterior)</a>
-    </p>
-  </footer>
+        <div>
+          <p>Site sem ideia com imagens</p>
+          <hr>
+          <!--Inserindo imagens que redimensiona-->
+          <picture>
+            <source media="(max-width: 750px)" srcset="fotos/one_piece/Crocodile-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="fotos/one_piece/Crocodile_m.png" type="image/png">
+            <img src="fotos/one_piece/Crocodile_m.png" alt="imagem">
+          </picture>
+        </div>
+        <div>
+          <!--Adicionando audio-->
+          <h2>Reproduzindo Audio</h2>
+          <p>Reproduza o audio abaixo</p>
+          <audio preload="metadata" controls autoplay loop>
+            <source src="midia/Crocodile-falando-Mugiwara.mp3" type="audio/mpeg">
+            <source src="midia/Crocodile-falando-Mugiwara.ogg" type="audio/ogg">
+            <source src="midia/Crocodile-falando-Mugiwara.wav" type="audio/wav">
+          </audio>
+        </div>
+        <!--Adicionando video-->
+        <div>
+          <h2>Reproduzindo Video</h2>
+          <p>Reproduza o video abaixo</p>
+          <video width="500" controls>
+            <source src="midia/Crocodile-falando-Mugiwara.webm" type="video/webm">
+            <source src="midia/Crocodile-falando-Mugiwara.mp4" type="video/mp4">
+            <source src="midia/Crocodile-falando-Mugiwara.m4v" type="video/mp4">
+            <source src="midia/Crocodile-falando-Mugiwara.ogv" type="video/ogv">
+            <p>Seu navegador não tem compatibilidade com reprodução de video</p>
+          </video>
+        </div>
+        <!-- Inserindo videos externos-->
+        <div>
+          <h2>Adicionando video do YouTube</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qHlROAdarhk" title="YouTube video  player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <!--Adicionando links para download-->
+        <div>
+          <h2>Links para Download</h2>
+          <ul type="disc">
+            <li><a href="midia/Crocodile-falando-Mugiwara.mp3" download="Crocodile.mp3" type="audio/mpeg">Baixe o audio aqui</a></li>
+            <li><a href="midia/Crocodile-falando-Mugiwara.mp4" download="Crocodile.mp4" type="video/mp4">Baixe o video aqui</a></li>
+          </ul>
+        </div>
+        <nav>
+          <!--Voltar para pagina anterior-->
+          <p style="text-align: right;">
+          <a href="index.html" target="_self" rel="prev">(Voltar à página anterior)</a>
+          </p>
+        </nav>
+        </main>
+        <footer>
+      <p>Projeto de desenvolvimento web desenvolvido por Danielly</p>
+        </footer>
+    </div>
 </body>
 
 </html>

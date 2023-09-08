@@ -11,30 +11,45 @@
 </head>
 
 <body>
-  <header>
-    <h1 id="principal">DRAGON BALL</h1>
-  </header>
-  <main>
-    <hr>
-    <h1>Personagens de DragonBall</h1>
-    <hr>
-    <div>
-      <h2>Son Goku</h2>
-      <!--Inserindo imagens que redimensiona-->
-      <img src="https://i.pinimg.com/564x/cc/1d/1e/cc1d1eceebdbb348bebd6b4df2f16fcd.jpg" alt="goku">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos in, rem vel ratione alias nobis est velit a blanditiis temporibus veritatis quibusdam eligendi repellendus quisquam nemo. Quidem nesciunt explicabo fugit!</p>
-    </div>
-    <hr>
-    <!--Inserindo videos externos-->
-    <div>
-      <h2>Adicionando video do YouTube</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/m-7SE_QAOsI?si=bbqtl9DN2BgK39lU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-  </main>
-    <!--Voltar para pagina anterior-->
-  <footer>
-    <p style="text-align: right;"> <a href="index.html" target="_self" rel="prev">(voltar a pagina anterior)</a></p>
-  </footer>
+  <div id="interface">
+    <header id="cabecalho">
+      <h1>DRAGON BALL</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Personagens de DragonBall</h1>
+      <div class="conteudo-flex">
+        <section id="corpo">
+          <article>
+            <h2>Son Goku</h2>
+            <!--Inserindo imagens que redimensiona-->
+            <img src="https://i.pinimg.com/564x/cc/1d/1e/cc1d1eceebdbb348bebd6b4df2f16fcd.jpg" alt="goku">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos in, rem vel ratione alias nobis est velit a blanditiis temporibus veritatis quibusdam eligendi repellendus quisquam nemo. Quidem nesciunt explicabo fugit!</p>
+          </article>
+        </section>
+        <aside id="lateral">
+          <p> Dragon Ball se originou no mangá, os quadrinhos japoneses. A série de mangá estreou em 1984 na revista semanal "Shonen Jump". Sua compilação possui 42 volumes encadernados, sendo que os primeiros 16 correspondem à primeira série de TV.</p>
+        </aside>
+      </div>
+      <nav>
+        <!--Voltar para pagina anterior-->
+        <p style="text-align: right;">
+        <a href="index.html" target="_self" rel="prev">(Voltar à página anterior)</a>
+        </p>
+      </nav>
+    </main>
+    <footer id="rodape">
+      <p>Projeto de desenvolvimento web desenvolvido por Danielly</p>
+    </footer>
+  </div>
 </body>
 
 </html>
