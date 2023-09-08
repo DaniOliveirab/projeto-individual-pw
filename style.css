@@ -11,35 +11,19 @@ body{
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    
-}
-main{
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(51, 46, 94);
-    min-width: 600;
-    max-width: 1050px;
-    padding: 10px;
-    margin: auto;
-}
-#cabecalho h1{
-    font-family: Action Comics, Helvetica, sans-serif;
-    font-size: 4vw;
-    color:#921b1b;
-    text-align: center;
-    text-shadow: 1px 1px 2px #8f6e5a(64, 58, 92, 0.849);
-}
-/*#interface > main > aside{
-  background-color: #9DCCF6;
-  margin-top: 20px;  
-}*/
-h1{
-    color:#d34e4e;
+    font-size: 20px;  
 }
 #interface {
-  width: 80%; 
+  /*width: 80%;
   margin: 0 auto; 
+  max-width: 1050px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;*/
+  width: 80%;
+  margin: 0 auto; 
+  max-width: 1050px;
+  min-height: 100%;
 }
 #interface a {
     text-decoration: chartreuse;
@@ -52,6 +36,17 @@ h1{
     max-width: 1050px;
     padding: 10px;
     margin: 10px;
+    /*box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;*/
+    
+}
+#cabecalho h1{
+  font-family: Action Comics, Helvetica, sans-serif;
+  font-size: 4vw;
+  color:#921b1b;
+  text-align: center;
+  text-shadow: 1px 1px 2px #8f6e5a(64, 58, 92, 0.849);
 }
 #cabecalho .menu {
   font-family: "Chivo Mono", monospace;
@@ -101,6 +96,18 @@ nav > .menu ul {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(51, 46, 94);
+    min-width: 600px;
+    max-width: 1050px;
+    padding: 10px;
+    margin: auto;
+}
+h1{
+    color:#d34e4e;
+}
 .conteudo-flex {
   display: flex;
   flex-wrap: wrap;
@@ -108,38 +115,62 @@ nav > .menu ul {
 }
 #corpo{
   flex: 1;
-  max-width: 70%; /* Deixando espaço para a borda direita */
+  max-width: 70%; 
   background-color: #c2e3ff;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
-  box-sizing: border-box; /* Para que o preenchimento não aumente a largura */
+  box-sizing: border-box; 
+}
+#corpo article{
+  max-width: 90%;
+  width: 100%;
+}
+#corpo h2{
+  color: #a75454;
 }
 article img{
   max-width: 100%;
   height: auto;
 }
-#corpo article{
-  max-width: 90%; /* Ou outro valor, como max-width: 90%; */
-  width: 100%; /* Garante que o article ocupe 100% da largura do contêiner pai */
-}
 #lateral {
   flex: 1;
   max-width: 33%;
-  background-color: #c2e3ff;
-  border-radius: 10px;
-  padding: 10px;
+  max-height: 80vh;
+  padding: 0px 10px 10x 10px;
   margin: 10px;
   box-sizing: border-box;
-  height: 320px;
+  /*height: 320px;*/
+  display: flex;
+  flex-direction: column;
+}
+#lateral h2{
+  margin-top: 0px;
+  text-align: center;
+  color: #a75454;
+}
+.item{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  flex: 1;
+  margin: 0px 5px 5px 5px;
+  padding: 10px;
+  background-color: #c2e3ff;
+  border-radius: 10px;
+  text-align: initial;
+  max-width: 92%;
 }
 footer{
   clear: both;
   border-top: 1px solid #606060;
   background-color: rgb(11, 64, 95);
   border-radius: 0px 0px 10px 10px;
-  color: white;
-  text-align: center;
   padding: 1px;
   margin: 0px;
+  min-width: 100%;
+  width: 96vh;
+}
+footer p{
+  color: white;
+  text-align: center;
 }

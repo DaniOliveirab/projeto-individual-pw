@@ -31,30 +31,36 @@
       <main>
         <p>biografia de personagens de anime</p>
         <hr>
-        <div>
-        <h2>Animes</h2>
-          <nav>
-            <!--Lista desordenada-->
-            <ul>
-              <li><a href="dragonball.html" target="_self" rel="next">DragonBall</a></li>
-              <picture>
-                <!--Imagens que redmensiona-->
-                <source media="(max-width: 800px)" srcset="fotos/dragonball/dragonball-p.jpg" type="image/png">
-                <source media="(max-width: 1050px)" srcset="fotos/dragonball/dragonball-m.jpg" type="image/png">
-                <img src="fotos/dragonball/dragonball-g.jpg" alt="imagem">
-              </picture>
-              <li>Naruto</li>
-              <li>One Piece</li>
-              <li>One Punch Man</li>
-              <li>Kimetsu No Yaiba</li>
-              <li>Shingeki No Kyojin</li>
-              <li>Tate No Yūsha No Nariagari</li>
-            </ul>
-          </nav>
-        </div>
-        <div>
-          <h2>Usando links externos</h2>
-          <p>Link para pagina externa o <a href="https://www.youtube.com/" target="_blank" rel="externa">YouTube</a></p>
+        <div class="conteudo-flex">
+          <section id="corpo">
+            <article>
+              <h2>Animes</h2>
+                <nav>
+                  <!--Lista desordenada-->
+                  <ul>
+                    <li><a href="dragonball.html" target="_self" rel="next">DragonBall</a></li>
+                      <picture>
+                        <!--Imagens que redmensiona-->
+                        <source media="(max-width: 700px)" srcset="fotos/dragonball/dragonball-p.jpg" type="image/png">
+                        <source media="(max-width: 1050px)" srcset="fotos/dragonball/dragonball-m.jpg" type="image/png">
+                        <img src="fotos/dragonball/dragonball-g.jpg" alt="imagem">
+                      </picture>
+                    <li>Naruto</li>
+                    <li>One Piece</li>
+                    <li>One Punch Man</li>
+                    <li>Kimetsu No Yaiba</li>
+                    <li>Shingeki No Kyojin</li>
+                    <li>Tate No Yūsha No Nariagari</li>
+                  </ul>
+                </nav>
+            </article>
+          </section>
+          <aside id="lateral">
+            <div class="item">
+              <h2>Usando links externos</h2>
+              <p>Link para pagina externa o <a href="https://www.youtube.com/" target="_blank" rel="externa">YouTube</a></p>
+            </div>
+          </aside>
         </div>
         <nav>
           <!--Voltar para pagina anterior-->
