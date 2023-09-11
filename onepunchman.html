@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Adicionando favicon-->
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+  <title>Animegrafia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="interface">
+    <header id="cabecalho">
+      <h1>ONE PUNCH MAN</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Personagens de One Punch Man</h1>
+      <div class="conteudo-flex">
+        <section id="corpo">
+          <article>
+            <h2>Genos</h2>
+            <div>
+                <hr>
+                <!--Inserindo imagens que redimensiona-->
+                <picture>
+                  <source media="(max-width: 750px)" srcset="fotos/one_punch_man/genos-p.jpg" type="image/png">
+                  <source media="(max-width: 1050px)" srcset="fotos/onne_punch_man/genos-m.jpg" type="image/png">
+                  <img src="fotos/one_punch_man/genos-g.jpg" alt="imagem">
+                </picture>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur architecto excepturi ipsa hic alias, doloribus praesentium cumque quidem corporis vero eligendi, tempore amet quis minima necessitatibus earum labore? Dolorum, excepturi.</p>
+          </article>
+        </section>
+        <aside id="lateral">
+          <div class="item">
+            <h2>Curiosidades</h2>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi voluptatibus consequatur in quibusdam exercitationem suscipit consequuntur necessitatibus aliquam animi commodi fugiat odit, eum excepturi perspiciatis ipsa autem rem quis nesciunt.</p>
+          </div>
+          <div class="item">
+            <h2>Curiosidades</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique atque recusandae unde, dolorum saepe sed eum velit odio adipisci veniam fugiat facere ab nam pariatur. Odio labore aspernatur totam laudantium?</p>
+          </div>
+        </aside>
+      </div>
+      <nav>
+        <!--Voltar para pagina anterior-->
+        <p style="text-align: right;">
+        <a href="index.html" target="_self" rel="prev">(Voltar à página anterior)</a>
+        </p>
+      </nav>
+    </main>
+    <footer id="rodape">
+      <p>Projeto de desenvolvimento web desenvolvido por Danielly</p>
+    </footer>
+  </div>
+</body>
+
+</html>
