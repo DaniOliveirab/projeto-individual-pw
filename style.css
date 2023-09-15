@@ -97,7 +97,7 @@ input[type=radio] {
 img{
   width: 80%;
   height: 70%;
-  border-radius: 200px;
+  /*border-radius: 200px;*/
   object-fit: cover;
 }
 .card{
@@ -222,6 +222,22 @@ footer{
   width: 96vh;
 }
 footer p{
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
+}
+table {
+  border-collapse: collapse;
+  box-shadow: 1px 1px 10px 1px rgba(7, 7, 7, 0.692);
+  width: 50%;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #719dee;
 }
